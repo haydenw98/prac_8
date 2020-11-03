@@ -9,7 +9,7 @@ class UnreliableCar(Car):
 
     def drive(self, distance):
         chance = randint(1, 100)
-        if chance > self.reliability or chance == self.relaibility:
+        if chance > self.reliability or chance == self.reliability:
             distance = 0
         distance_driven = super().drive(distance)
         return distance_driven
